@@ -1,0 +1,7 @@
+{
+  "name": "@nx-basic/app1",
+  "version": "0.0.1",
+  "dependencies": {
+    "@nx-basic/lib1": "0.0.1"
+  }
+}

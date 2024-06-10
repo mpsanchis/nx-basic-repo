@@ -1,0 +1,19 @@
+{
+  "name": "commons2",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/commons2/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/commons2",
+        "main": "libs/commons2/src/index.ts",
+        "tsConfig": "libs/commons2/tsconfig.lib.json",
+        "assets": ["libs/commons2/*.md"]
+      }
+    }
+  }
+}
