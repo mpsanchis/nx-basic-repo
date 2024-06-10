@@ -14,6 +14,26 @@
     ],
     "sharedGlobals": []
   },
+  "release": {
+    "projects": ["*"],
+    "changelog": {
+      "projectChangelogs": false,
+      "workspaceChangelog": false
+    },
+    "projectsRelationship": "independent",
+    "version": {
+      "git": {
+        "commit": false,
+        "tag": false,
+        "stageChanges": false
+      },
+      "conventionalCommits": true,
+      "generatorOptions": {
+        "updateDependents": "auto"
+      }
+    },
+    "releaseTagPattern": "{projectName}@{version}"
+  },
   "plugins": [
     {
       "plugin": "@nx/webpack/plugin",
