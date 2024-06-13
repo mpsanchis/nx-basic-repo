@@ -14,6 +14,40 @@
     ],
     "sharedGlobals": []
   },
+  "release": {
+    "changelog": {
+      "projectChangelogs": false,
+      "workspaceChangelog": false
+    },
+    "version": {
+      "git": {
+        "commit": false,
+        "tag": false,
+        "stageChanges": false
+      },
+      "conventionalCommits": true,
+      "generatorOptions": {
+        "updateDependents": "auto"
+      }
+    },
+    "groups": {
+      "commons": {
+        "projects": ["commons", "commons2"],
+        "projectsRelationship": "fixed",
+        "releaseTagPattern": "commons@{version}"
+      },
+      "lib1": {
+        "projects": ["lib1"],
+        "projectsRelationship": "fixed",
+        "releaseTagPattern": "lib1@{version}"
+      },
+      "app1": {
+        "projects": ["app1", "app2"],
+        "projectsRelationship": "fixed",
+        "releaseTagPattern": "app1@{version}"
+      }
+    }
+  },
   "plugins": [
     {
       "plugin": "@nx/webpack/plugin",
