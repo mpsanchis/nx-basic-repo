@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@myorg/my-plugin": ["plugins/src/index.ts"],
       "@nx-basic/commons": ["libs/commons/src/index.ts"],
       "@nx-basic/commons2": ["libs/commons2/src/index.ts"],
       "@nx-basic/lib1": ["libs/lib1/src/index.ts"]
