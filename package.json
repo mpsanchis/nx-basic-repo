@@ -17,6 +17,7 @@
     "@nx/jest": "19.6.2",
     "@nx/js": "19.6.2",
     "@nx/playwright": "19.6.2",
+    "@nx/plugin": "19.6.2",
     "@nx/react": "19.6.2",
     "@nx/web": "19.6.2",
     "@nx/webpack": "19.6.2",
